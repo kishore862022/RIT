@@ -8,7 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { MainpageComponent } from './mainpage/mainpage.component';
+
 import { FnavbarComponent } from './fnavbar/fnavbar.component';
 
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -17,14 +17,10 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 // import { DataTablesModule } from 'angular-datatables';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from '@angular/material/table';
+import { MainpageComponent } from './mainpage/mainpage.component';
 
 
-const routes:Routes =[
-  {path:'register',component:RegisterComponent},
-  {path:'login',component:LoginComponent},
-  {path:'dashboard',component:DashboardComponent},
-  {path:'',component:MainpageComponent}
-]
+
 
 @NgModule({
   declarations: [
@@ -34,11 +30,11 @@ const routes:Routes =[
     SidebarComponent,
     DashboardComponent,
     PagenotfoundComponent,
-    MainpageComponent,LoginComponent,RegisterComponent,FnavbarComponent
+   LoginComponent,RegisterComponent,FnavbarComponent, MainpageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,RouterModule.forRoot(routes),
+    AppRoutingModule,RouterModule,
     // DataTablesModule,
     BrowserAnimationsModule,
     MatTableModule

@@ -4,11 +4,18 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
+
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  // {path:'',component:LoginComponent},
+  {path:'',component:LoginComponent},
+  {path:'login',component:LoginComponent},
+  {path:'register',component:RegisterComponent},
+  {path:'dashboard',component:DashboardComponent},
   {path:'mainpage',component:MainpageComponent},
+
+
 
   // {path:'',component:DashboardComponent},
   
