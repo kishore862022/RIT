@@ -2,7 +2,7 @@
   <app-navbar (sideNavToggled)="sideNavStatus = $event;"></app-navbar>
   <main>
     <app-sidebar [sideNavStatus]="sideNavStatus" [ngClass]="{'app-sidebar-open':sideNavStatus}"></app-sidebar>
-    <div class="display-area p-3" [ngClass]="{'display-area-shrink':sideNavStatus}" >
+    <div class="display-area p-3"  >
 
    <router-outlet></router-outlet>
     </div>

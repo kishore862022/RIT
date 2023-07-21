@@ -14,7 +14,7 @@ export class SidebarComponent implements OnInit {
       id:1,
       name:'Dashboard',
       icon:'bx bxs-dashboard',
-      link:''
+      link:'/g'
     },
     {
       id:2,
