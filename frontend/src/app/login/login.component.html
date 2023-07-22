@@ -9,7 +9,9 @@
             <div class="signin-content">
                 <div class="signin-image">
                     <figure><img src="assets/images/ritlogo1.png" alt="sing up image"></figure>
-                    <!-- <a href="#" class="signup-image-link">Create an account</a> -->
+                    <br>
+                    
+                    <a href="#" class="signup-image-link"><span>RAMCO</span> institute of technology</a>
                 </div>
 
                 <div class="signin-form">
@@ -47,7 +49,7 @@
                        </div> -->
                         <div class="form-group form-button login_button"
                             style="display: flex;justify-content: space-between;width:100%;">
-                            <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
+                            <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" [disabled]="loginfromdata.invalid" />
                             <input name="signin" id="" class="form-submit" routerLink="/register" value="Register" />
                         </div>
                     </form>

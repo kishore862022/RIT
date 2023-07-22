@@ -169,7 +169,7 @@ img {
   height: auto; }
 
 figure {
-  margin: 0; }
+  margin: 0px; }
 
 p {
   margin-bottom: 0px;
@@ -273,8 +273,9 @@ margin-left: 35px;
  border-left: 2px solid rgba(45, 41, 41, 0.18) ;}
 
 figure {
-  margin-bottom: 50px;
-  text-align: center; }
+  margin-bottom: 20px;
+  text-align: center;
+margin-left: 10px; }
  i{
   font-size:large;
  }
@@ -300,11 +301,17 @@ figure {
 #signin {
   margin-top: 16px; }
 
-.signup-image-link {
-  font-size: 14px;
-  color: #222;
-  display: block;
-  text-align: center; }
+  .signup-image-link {
+    font-size:large;
+    color: #222;
+    display: block;
+    text-align: center; 
+    /* font-family:; */
+  }
+  .signup-image-link span{
+    color: rgb(228, 26, 26);
+  }
+  
 
 .term-service {
   font-size: 13px;

@@ -10,7 +10,7 @@ export class LoginComponent {
 
 loginfromdata = new FormGroup({
   username: new FormControl("",[Validators.required,Validators.pattern("[a-zA-Z].*")]),
-  password : new FormControl("",[Validators.required,Validators.minLength(6),Validators.maxLength(15)])
+  password : new FormControl("",[Validators.required,Validators.minLength(8),Validators.maxLength(15)])
 });
 
 
