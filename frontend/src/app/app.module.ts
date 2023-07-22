@@ -18,7 +18,10 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from '@angular/material/table';
 import { MainpageComponent } from './mainpage/mainpage.component';
-import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FirstpageComponent } from './firstpage/firstpage.component';
+import { CourseMasterComponent } from './JA/course-master/course-master.component';
+import { UniversityMarksComponent } from './JA/university-marks/university-marks.component';
 
 
 
@@ -31,14 +34,14 @@ import { FormGroup, ReactiveFormsModule } from '@angular/forms';
     SidebarComponent,
     DashboardComponent,
     PagenotfoundComponent,
-   LoginComponent,RegisterComponent,FnavbarComponent, MainpageComponent
+   LoginComponent,RegisterComponent,FnavbarComponent, MainpageComponent, FirstpageComponent, CourseMasterComponent, UniversityMarksComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,RouterModule,
     // DataTablesModule,
     BrowserAnimationsModule,
-    MatTableModule,ReactiveFormsModule
+    MatTableModule,ReactiveFormsModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

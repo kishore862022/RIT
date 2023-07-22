@@ -1,0 +1,141 @@
+
+    <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+            <!-- <img src="your-image-url-here.jpg"> -->
+            <form action="" method=""  (ngSubmit)="To_DB()" #myForm="ngForm">
+                <div class="formbold-form-title">
+                    <h2 class="">COURSE ENTRY</h2>
+                    <!-- <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt.
+                    <h3><span class="SPAN">PPW => {"PERIODS PER WEEK"}
+                        </span></h3>
+                    </p> -->
+                </div>
+
+                <div class="formbold-input-flex">
+                    <div>
+                        <label for="Year" class="formbold-form-label">
+                            Year*
+                        </label>
+                        <select name="Year" id="Year" class="formbold-form-input" [(ngModel)]="course_master_data.year" required #yearField="ngModel">
+                            <option value="" disabled selected hidden>Select year</option>
+                            <option value="1">1st year</option>
+                            <option value="2">2nd year</option>
+                            <option value="3">3rd year</option>
+                            <option value="4">4th year</option>
+                        </select>
+                        <div *ngIf="yearField.invalid && yearField.touched" class="error-message">
+                            Year is required.
+                          </div>
+                    </div>
+                    <div>
+                        <label for="Semester" class="formbold-form-label"> Semester* </label>
+                        <select name="Semester" id="Semester" class="formbold-form-input" [(ngModel)]="course_master_data.semester" required #semField="ngModel">
+                            <option value="" disabled selected hidden>Select Semester</option>
+                            <option value="1">semester 1</option>
+                            <option value="2">semester 2</option>
+                            <option value="3">semester 3</option>
+                            <option value="4">semester 4</option>
+                            <option value="5">semester 5</option>
+                            <option value="6">semester 6</option>
+                            <option value="7">semester 7</option>
+                            <option value="8">semester 8</option>
+                        </select>
+                        <div *ngIf="semField.invalid && semField.touched" class="error-message">
+                            Semester is required.
+                          </div>
+                        
+                    
+                    </div>
+                    <div>
+                        <label for="Regulation" class="formbold-form-label"> Regulation* </label>
+                    <select name="Regulation" id="Regulation" class="formbold-form-input">
+                        <option value="" disabled selected hidden>Select Regulation</option>
+                        <option value="2017">2017</option>
+                        <option value="2021">2021</option>
+                        
+                    </select>
+                    </div>
+                </div>
+
+                <div class="formbold-input-flex">
+                    <div>
+                        <label for="Course_Type" class="formbold-form-label"> Course Type* </label>
+                        <select name="Course_Type" id="Course_Type" class="formbold-form-input" >
+                            <option value="" disabled selected hidden>Select CourseType</option>
+                            <option value="THEORY">THEORY</option>
+                            <option value="PRACTICALS">PRACTICALS</option>
+                            <option value="VERTICALS">VERTICALS</option>
+                        </select>
+                    </div>
+                    
+                    
+                    <div>
+                        <label for="Credit" class="formbold-form-label"> Credit*</label>
+                        <select name="Credit" id="Credit" class="formbold-form-input">
+                            <option value="" disabled selected hidden>Select Credit</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="formbold-input-flex">
+                    <!-- <div><label for="Vertical_code" class="formbold-form-label">
+                            Vertical code*
+                        </label>
+                        <input type="text" name="Vertical_code" id="Vertical_code" class="formbold-form-input" />
+                    </div> -->
+                    <div><label for="Course_code" class="formbold-form-label">
+                        Course_code*
+                        </label>
+                        <input type="text" name="Course_code" id="Course_code" class="formbold-form-input" />
+                    </div>
+                    <div>
+                        <label for="Category" class="formbold-form-label"> Category*</label>
+                        <input type="text" name="Category" id="Category" class="formbold-form-input" />
+                    </div>
+
+                </div>
+
+                <div class="formbold-input-flex">
+                    <div>
+                        <label for="PPW-Lectur" class="formbold-form-label">PPW-Lectur*</label>
+                        <select name="PPW-Lectur" id="PPW-Lectur" class="formbold-form-input">
+                            <option value="" disabled selected hidden>Select PPW-Lectur</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="PPW-Tutorial" class="formbold-form-label"> PPW-Tutorial* </label>
+                        <select name="PPW-Tutorial" id="PPW-Tutorial" class="formbold-form-input">
+                            <option value="" disabled selected hidden>Select PPW-Tutorial</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="PPW-Practical" class="formbold-form-label"> PPW-Practical*</label>
+                        <select name="PPW-Practical" id="PPW-Practical" class="formbold-form-input">
+                            <option value="" disabled selected hidden>Select PPW-Practical</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="formbold-btn">Add To DB</button>
+            </form>
+        </div>
+    </div>

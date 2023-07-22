@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CourseMasterComponent } from './JA/course-master/course-master.component';
 import { LoginComponent } from './login/login.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'dashboard',component:DashboardComponent},
   {path:'mainpage',component:MainpageComponent},
+  {path:'course_entery',component:CourseMasterComponent},
 
 
 

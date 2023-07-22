@@ -14,7 +14,7 @@ export class SidebarComponent implements OnInit {
       id:1,
       name:'Dashboard',
       icon:'bx bxs-dashboard',
-      link:'/g'
+      link:'/dashboard'
     },
     {
       id:2,
@@ -55,6 +55,12 @@ export class SidebarComponent implements OnInit {
     {
       id:8,
       name:'Settings',
+      icon:'bx bx-cog',
+      link:'/settings'
+    },
+    {
+      id:9,
+      name:'main',
       icon:'bx bx-cog',
       link:'/settings'
     },
