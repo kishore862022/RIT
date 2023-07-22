@@ -18,6 +18,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from '@angular/material/table';
 import { MainpageComponent } from './mainpage/mainpage.component';
+import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -37,7 +38,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
     AppRoutingModule,RouterModule,
     // DataTablesModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -6,5 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+
+loginfromdata = new FormGroup({
+  username: new FormControl("",[Validators.required,Validators.pattern("[a-zA-Z].*")]),
+  password : new FormControl("",[Validators.required,Validators.minLength(6),Validators.maxLength(15)])
+});
+
+
+get Username(){
+  return this.loginfromdata.get("username") as FormControl 
+}
+get Password(){
+  return this.loginfromdata.get("password") as FormControl 
+}
+
+submitdata(){
+  
+}
 
 }
