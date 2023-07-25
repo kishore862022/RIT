@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient,HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-university-marks',
@@ -7,9 +8,42 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UniversityMarksComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+  }
+
+  University_Marks_data ={
+    degree_code: 1,
+    batch_no :null,
+    dept_code :1,
+    regulation_no :null,
+    semester : null,
+    course_code:'',
+    reg_no:'',
+    grade :''
+
+  }
+
+
+  To_DB(): void {
+    console.log(this.University_Marks_data);
+    this.http.post('http://localhost:3000/api/v1/JA/university_mark', this.University_Marks_data)
+      .subscribe(
+        (response) => {alert('Data saved successfully...');},
+        (error) => {console.error('Error submitting form:', error);}
+      );
+      this.University_Marks_data ={
+        degree_code: 1,
+        batch_no :null,
+        dept_code :1,
+        regulation_no :null,
+        semester : null,
+        course_code:'',
+        reg_no:'',
+        grade :''
+    
+      };
   }
 
 }

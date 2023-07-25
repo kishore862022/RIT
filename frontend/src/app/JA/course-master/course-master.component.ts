@@ -26,7 +26,8 @@ course_master_data = {
   credit: null,
   ppw_lectur: null,
   ppw_tutorial: null,
-  ppw_practical: null
+  ppw_practical: null,
+  course_title:''
 };
 
 
@@ -57,7 +58,8 @@ To_DB(): void {
       credit: null,
       ppw_lectur: null,
       ppw_tutorial: null,
-      ppw_practical: null
+      ppw_practical: null,
+      course_title:''
     };
 }
 
