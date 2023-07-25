@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+// import {Injectable} from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +23,7 @@ import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FirstpageComponent } from './firstpage/firstpage.component';
 import { CourseMasterComponent } from './JA/course-master/course-master.component';
 import { UniversityMarksComponent } from './JA/university-marks/university-marks.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -41,7 +43,7 @@ import { UniversityMarksComponent } from './JA/university-marks/university-marks
     AppRoutingModule,RouterModule,
     // DataTablesModule,
     BrowserAnimationsModule,
-    MatTableModule,ReactiveFormsModule,FormsModule
+    MatTableModule,ReactiveFormsModule,FormsModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
