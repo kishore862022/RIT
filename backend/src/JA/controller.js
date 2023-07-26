@@ -29,7 +29,7 @@ const addcoursdata = async (req, res) => {
     }
   };
   
-  
+
   // this set of code line for university mark data entry to db
   const add_university_mark_data = async (req, res) => {
 
@@ -51,3 +51,4 @@ module.exports = {
     addcoursdata,
     add_university_mark_data,
 }
+
