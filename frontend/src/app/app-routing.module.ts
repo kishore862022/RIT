@@ -16,8 +16,8 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'dashboard',component:DashboardComponent},
   {path:'mainpage',component:MainpageComponent},
-  {path:'course_entery',component:CourseMasterComponent},
-  {path:'university_entery',component:UniversityMarksComponent},
+  {path:'course_entry',component:CourseMasterComponent},
+  {path:'university_entry',component:UniversityMarksComponent},
   
 
 
