@@ -14,11 +14,11 @@ const getcoursedata = (req, res) => {
 const addcoursdata = async (req, res) => {
     // Assuming the client is sending JSON data with a 'message' property
     const { course_code,degree_code, dept_code, year, semester,regulation, course_type,category, credit, 
-                 ppw_lectur,  ppw_tutorial, ppw_practical,course_title} = req.body;
+                 ppw_lectur,  ppw_tutorial, ppw_practical,course_title,course_subtype} = req.body;
   
     try {
       // Perform database insert operation
-      await pool.query(query.addcoursdata,[course_code, degree_code, dept_code, year, semester, regulation, course_type, category, credit, ppw_lectur, ppw_tutorial, ppw_practical,course_title]);
+      await pool.query(query.addcoursdata,[course_code, degree_code, dept_code, year, semester, regulation, course_type, category, credit, ppw_lectur, ppw_tutorial, ppw_practical,course_title,course_subtype]);
   
       // Send the response
       // alert("Data saved successfully.");

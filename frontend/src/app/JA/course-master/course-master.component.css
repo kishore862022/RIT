@@ -108,6 +108,7 @@ body {
   color: #000000;
   outline: none;
   resize: none;
+  
 }
 .formbold-form-input:focus {
   border-color: #6a64f1;

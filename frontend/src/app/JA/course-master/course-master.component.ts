@@ -27,14 +27,15 @@ course_master_data = {
   ppw_lectur: null,
   ppw_tutorial: null,
   ppw_practical: null,
-  course_title:''
+  course_title:'',
+  course_subtype:''
 };
 
 
 
 To_DB(): void {
   console.log(this.course_master_data);
-  this.http.post('http://localhost:3000/api/v1/JA/', this.course_master_data)
+  this.http.post('http://172.16.71.2:9090/api/v1/JA/', this.course_master_data)
     .subscribe(
       (response) => {
         
@@ -42,7 +43,7 @@ To_DB(): void {
         // Handle success, show a success message, or perform any other action
       },
       (error) => {
-        console.error('Error submitting form:', error);
+        alert("This course is alrady exist");
         // Handle error, show an error message, or perform any other action
       }
     );
@@ -59,7 +60,8 @@ To_DB(): void {
       ppw_lectur: null,
       ppw_tutorial: null,
       ppw_practical: null,
-      course_title:''
+      course_title:'',
+      course_subtype:''
     };
 }
 

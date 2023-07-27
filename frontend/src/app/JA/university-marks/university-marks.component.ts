@@ -28,7 +28,7 @@ export class UniversityMarksComponent implements OnInit {
 
   To_DB(): void {
     console.log(this.University_Marks_data);
-    this.http.post('http://localhost:3000/api/v1/JA/university_mark', this.University_Marks_data)
+    this.http.post('http://172.16.71.2:9090/api/v1/JA//university_mark', this.University_Marks_data)
       .subscribe(
         (response) => {alert('Data saved successfully...');},
         (error) => {console.error('Error submitting form:', error);}
