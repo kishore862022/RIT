@@ -1,0 +1,418 @@
+
+<div class="formbold-main-wrapper">
+    <div class="formbold-form-wrapper">
+        <!-- <img src="your-image-url-here.jpg"> -->
+        <form (submit)="To_DB()" #myForm="ngForm">
+            <div class="formbold-form-title">
+                <h2 class="">IAT MARK ENTRY</h2>
+
+            </div>
+
+            <div class="formbold-input-flex">
+                <div>
+                    <label for="Year" class="formbold-form-label">
+                        Year*
+                    </label>
+                    <select name="Regulation" id="Year" class="formbold-form-input"
+                        [(ngModel)]="course_master_data.year" required>
+                        <option value="" disabled selected hidden>Select year</option>
+                        <option [value]="1">1</option>
+                        <option [value]="2">2</option>
+                        <option [value]="3">3</option>
+                        <option [value]="4">4</option>
+                    </select>
+                    <!-- <div *ngIf="yearField.invalid && yearField.touched"s class="error-message">
+                            Year is required.
+                          </div> -->
+                </div>
+                <div>
+
+                    <label for="Semester" class="formbold-form-label">Semester* </label>
+                    <select name="Regulation" class="formbold-form-input" [(ngModel)]="course_master_data.semester"
+                        required>
+                        <option value="" disabled selected hidden>Select Semester</option>
+                        <option [value]="1"> 1</option>
+                        <option [value]="2">2</option>
+                        <option [value]="3"> 3</option>
+                        <option [value]="4"> 4</option>
+                        <option [value]="5"> 5</option>
+                        <option [value]="6"> 6</option>
+                        <option [value]="7"> 7</option>
+                        <option [value]="8"> 8</option>
+                       
+
+                    </select>
+
+                </div>
+                <div>
+                    <label for="Regulation" class="formbold-form-label"> Regulation* </label>
+                    <select name="Regulation" id="Regulation" class="formbold-form-input"
+                        [(ngModel)]="course_master_data.regulation" required>
+                        <option value="" disabled selected hidden>Select Regulation</option>
+                        <!-- <option [value]="2017">2017</option> -->
+                        <option [value]="2021">2021</option>
+                        
+
+                    </select>
+                </div>
+                <div><label for="Course_code" class="formbold-form-label">
+                    Course_code*
+                </label>
+                <input type="text" name="Course_code" id="Course_code" class="formbold-form-input"
+                    [(ngModel)]="course_master_data.course_code" required placeholder="Enter course_code" />
+            </div>
+            <div><label for="reg_no" class="formbold-form-label">
+                Register_Number*
+            </label>
+            <input type="Number" name="reg_no" id="Register_Number" class="formbold-form-input"
+                [(ngModel)]="course_master_data.Register_Number" required placeholder="Enter Register_Number" />
+            </div>
+            </div>
+            <div >
+                <h2 class="" style="text-align: center;">Part - A</h2>
+
+            </div>
+            <div class="formbold-input-flex">
+                <!-- <div><label for="Vertical_code" class="formbold-form-label">
+                            Vertical code*
+                        </label>
+                        <input type="text" name="Vertical_code" id="Vertical_code" class="formbold-form-input" />
+                    </div> -->
+                <!-- <div><label for="Course_code" class="formbold-form-label">
+                        Course_code*
+                    </label>
+                    <input type="text" name="Course_code" id="Course_code" class="formbold-form-input"
+                        [(ngModel)]="course_master_data.course_code" required placeholder="Enter course_code" />
+                </div>
+                <div><label for="reg_no" class="formbold-form-label">
+                    Register_Number*
+                </label>
+                <input type="text" name="reg_no" id="Register_Number" class="formbold-form-input"
+                    [(ngModel)]="course_master_data.course_code" required placeholder="Enter Register_Number" />
+             </div> -->
+
+            
+             <div><label for="q1" class="formbold-form-label">
+                Question_1*
+             </label>
+             <input type="Number" name="q1" id="q1" class="formbold-form-input"
+                [(ngModel)]="course_master_data.q1" required placeholder="q1" />
+             </div>
+             <div><label for="q2" class="formbold-form-label">
+                Question_2*
+             </label>
+             <input type="Number" name="q2" id="q2" class="formbold-form-input"
+                [(ngModel)]="course_master_data.q2" required placeholder="q2" />
+             </div>
+             <div><label for="q3" class="formbold-form-label">
+                Question_3*
+             </label>
+             <input type="Number" name="q3" id="q3" class="formbold-form-input"
+                [(ngModel)]="course_master_data.q3" required placeholder="q3" />
+             </div>
+             <div><label for="q4" class="formbold-form-label">
+                Question_4*
+             </label>
+             <input type="Number" name="q4" id="q4" class="formbold-form-input"
+                [(ngModel)]="course_master_data.q4" required placeholder="q4" />
+             </div>
+             <div><label for="q5" class="formbold-form-label">
+                Question_5*
+             </label>
+             <input type="Number" name="q5" id="q5" class="formbold-form-input"
+                [(ngModel)]="course_master_data.q5" required placeholder="q5" />
+             </div>
+            
+            
+            
+                <!-- <div><label for="Course_Title" class="formbold-form-label"> -->
+                    <!-- Course_Title*
+                </label>
+                <input type="text" name="Course_Titlee" id="Course_code" class="formbold-form-input"
+                    [(ngModel)]="course_master_data.course_title" required placeholder="Enter Course_Title" /> -->
+             <!-- </div> -->
+                
+
+            </div>
+
+            <div class="formbold-input-flex">
+                <div><label for="q6" class="formbold-form-label">
+                    Question_6*
+                 </label>
+                 <input type="Number" name="q6" id="q6" class="formbold-form-input"
+                    [(ngModel)]="course_master_data.q6" required placeholder="q6" />
+                 </div>
+                 <div><label for="q7" class="formbold-form-label">
+                    Question_7*
+                 </label>
+                 <input type="Number" name="q7" id="Question_7" class="formbold-form-input"
+                    [(ngModel)]="course_master_data.q7" required placeholder="q7" />
+                 </div>
+                 <div><label for="q8" class="formbold-form-label">
+                    Question_8*
+                 </label>
+                 <input type="Number" name="q8" id="q8" class="formbold-form-input"
+                    [(ngModel)]="course_master_data.q8" required placeholder="q8" />
+                 </div>
+                 <div><label for="q9" class="formbold-form-label">
+                    Question_9*
+                 </label>
+                 <input type="Number" name="q9" id="q9" class="formbold-form-input"
+                    [(ngModel)]="course_master_data.q9" required placeholder="q9" />
+                 </div>
+                 <div><label for="q10" class="formbold-form-label">
+                    Question_10*
+                 </label>
+                 <input type="Number" name="q10" id="q10" class="formbold-form-input"
+                    [(ngModel)]="course_master_data.q10" required placeholder="q10" />
+                 </div>
+            </div>   
+                
+            <div>
+                <h2 class="" style="text-align: center;">Part - B</h2>
+            </div>
+
+            <div class="formbold-input-flex">
+                <div class="formbold-input-flex">
+                    <label for="q11" class="formbold-form-label">Question11*</label>
+                    <select name="q11" id="q11" class="formbold-form-label" (change)="show11()"  >
+                        <!-- <option value="" disabled selected hidden>Select</option> -->
+                        <option value="11a"  selected>a</option>
+                        <option value="11b">b</option>
+                    </select>
+                    <br>
+                
+                    <input type="number" id="q11a" min="0"*ngIf="showQuestion11" placeholder="11a" [(ngModel)]="course_master_data.q11a">
+                    <input type="number" id="q11b" min="0"*ngIf="!showQuestion11"placeholder="11b" [(ngModel)]="course_master_data.q11b">
+                    <br>
+                </div>
+                <div class="formbold-input-flex">
+                    <label for="q12" class="formbold-form-label">Question12*</label>
+                    <select name="q12" id="q12" class="formbold-form-label" (change)="show12()"  >
+                        <!-- <option value="" disabled selected hidden>Select</option> -->
+                        <option value="12a"selected>a</option>
+                        <option value="12b">b</option>
+                    </select>
+                    <br>
+                    
+                    <input type="number" id="q12a" min="0"*ngIf="showQuestion12" placeholder="12a" [(ngModel)]="course_master_data.q12a">
+                    <input type="number" id="q12b" min="0"*ngIf="!showQuestion12"placeholder="12b" [(ngModel)]="course_master_data.q12b">
+                    <br>
+                </div>
+                <div class="formbold-input-flex">
+                    <label for="q13" class="formbold-form-label">Question13*</label>
+                    <select name="q13" id="q13" class="formbold-form-label" (change)="show13()"  >
+                        <!-- <option value="" disabled selected hidden>Select</option> -->
+                        <option value="13a" selected >a</option>
+                        <option value="13b">b</option>
+                    </select>
+                    <br>
+                    
+                    <input type="number" id="q13a" min="0"*ngIf="showQuestion13" placeholder="13a" [(ngModel)]="course_master_data.q13a">
+                    <input type="number" id="q13b" min="0"*ngIf="!showQuestion13"placeholder="13b" [(ngModel)]="course_master_data.q13b">
+                    <br>
+                </div>
+            </div>
+
+            <div class="formbold-input-flex">
+                <div class="formbold-input-flex">
+                    <label for="q14" class="formbold-form-label">Question14*</label>
+                    <select name="q14" id="q14" class="formbold-form-label" (change)="show14()"  >
+                        <!-- <option value="" disabled selected hidden>Select</option> -->
+                        <option value="14a"  selected>a</option>
+                        <option value="14b">b</option>
+                    </select>
+                    <br>
+                
+                    <input type="number" id="q14a" min="0"*ngIf="showQuestion14" placeholder="14a" [(ngModel)]="course_master_data.q14a">
+                    <input type="number" id="q14b" min="0"*ngIf="!showQuestion14"placeholder="14b" [(ngModel)]="course_master_data.q14b">
+                    <br>
+                </div>
+                <div class="formbold-input-flex">
+                    <label for="q15" class="formbold-form-label">Question15*</label>
+                    <select name="q15" id="q15" class="formbold-form-label" (change)="show15()"  >
+                        <!-- <option value="" disabled selected hidden>Select</option> -->
+                        <option value="15a"selected>a</option>
+                        <option value="15b">b</option>
+                    </select>
+                    <br>
+                    
+                    <input type="number" id="q15a" min="0"*ngIf="showQuestion12" placeholder="15a"  [(ngModel)]="course_master_data.q15a">
+                    <input type="number" id="q15b" min="0"*ngIf="!showQuestion12"placeholder="15b"  [(ngModel)]="course_master_data.q15b">
+                    <br>
+                </div>
+                <div class="formbold-input-flex">
+                    
+                        <label for="testtype" class="formbold-form-label">Test Type*</label>
+                        <select name="testtype" id="testtype" class="formbold-form-label"
+                            [(ngModel)]="course_master_data.testtype" required>
+                            <option value="" disabled selected hidden >Select Test Type</option>
+                            <option [value]="0">IAT 1</option>
+                            <option [value]="1">IAT 2</option>
+                            <option [value]="2">IAT 3</option>
+                            <option [value]="3">assessment</option>
+                        </select>
+                    
+                    
+                </div>
+
+                
+
+
+            </div>
+
+
+
+            <!-- <div class="formbold-input-flex">
+                <div class="formbold-input-flex">
+                    <label for="q14" class="formbold-form-label">Question14*</label>
+                    <select name="q14" id="q14" class="formbold-form-label" (change)="show14()"  required>
+                        <option value="" disabled selected hidden>Select</option> -->
+                        <!-- <option value="14a"selected>a</option>
+                        <option value="14b">b</option>
+                    </select>
+                    <br>
+                    
+                    <input type="number" id="q14a" min="0"*ngIf="showQuestion14" placeholder="14a">
+                    <input type="number" id="q14b" min="0"*ngIf="!showQuestion14"placeholder="14b">
+                    <br>
+                </div>
+                <div class="formbold-input-flex">
+                    <label for="q15" class="formbold-form-label">Question15*</label>
+                    <select name="q15" id="q15" class="formbold-form-label" (change)="show15()"  required>
+                         <option value="" disabled selected hidden>Select</option> -->
+                        <!-- <option value="15a"selected>a</option>
+                        <option value="15b">b</option>
+                    </select>
+                    <br>
+                    
+                    <input type="number" id="q15a" min="0"*ngIf="showQuestion15" placeholder="15a">
+                    <input type="number" id="q15b" min="0"*ngIf="!showQuestion15"placeholder="15b">
+                    <br>
+                </div> --> 
+               
+            <!-- </div> -->
+            
+            
+    
+                
+                
+
+            
+                
+            
+            
+            
+            <!-- <div>
+                    <div><h2 class="formbold-input-flex" style="text-align: center;">Part - B</h2>
+                    </div>
+                    
+                
+
+                <div class="formbold-input-flex">
+                <div>
+                    <label for="q11">Question11*</label>
+                    <select id="q11">
+                    
+                        <option value="11a">a</option>
+                        <option value="11b">b</option>
+                    </select>
+                    <br>
+                    <label for="q11"></label>
+                    <input type="number" id="q11" min="0">
+                    <br>
+                </div> 
+                </div>
+            </div> -->
+
+
+                <!-- <div> -->
+                    <!-- <label for="q12">Question12*</label>
+                    <select id="q12">
+                        <option value="12a">a</option>
+                        <option value="12b">b</option>
+                    </select>
+                    <br>
+                    <label for="q12"></label>
+                    <input type="number" id="integerInput" min="0">
+                    <br>
+                </div>
+                    
+                <div>
+                    <label for="q13">Question13*</label>
+                    <select id="q13">
+                        <option value="13a">a</option>
+                        <option value="13b">b</option>
+                    </select>
+                    <br>
+                    <label for="q13"></label>
+                    <input type="number" id="integerInput" min="0">
+                    <br>
+                </div>
+
+                <div>
+                    <label for="q14">Question14*</label>
+                    <select id="q14">
+                        <option value="14a">a</option>
+                        <option value="14b">b</option>  
+                    </select>
+                    <br>
+                    <label for="q14"></label>
+                    <input type="number" id="integerInput" min="0">
+                    <br>    
+
+                </div>
+
+                <div>
+                    <label for="q15">Question15*</label>
+                    <select id="q15">
+                        <option value="15a">a</option>
+                        <option value="15b">b</option>
+                    </select>
+                    <br>
+                    <label for="q15"></label>
+                    <input type="number" id="integerInput" min="0">
+                    <br>
+                
+                </div> -->
+            
+                
+               
+            <!-- </div> -->
+
+            
+           
+
+            <!-- <div class="formbold-input-flex">
+              
+                <div>
+                    <label for="PPW-Tutorial" class="formbold-form-label"> PPW-Tutorial* </label>
+                    <select name="PPW-Tutorial" id="PPW-Tutorial" class="formbold-form-input"
+                        [(ngModel)]="course_master_data.ppw_tutorial" required>
+                        <option value="" disabled selected hidden>Select PPW-Tutorial</option>
+                        <option [value]="0">0</option>
+                        <option [value]="1">1</option>
+                        <option [value]="2">2</option>
+                        <option [value]="3">3</option>
+                    </select>
+                </div>
+                <div> 
+                    <label for="PPW-Practical" class="formbold-form-label"> PPW-Practical*</label>
+                    <select name="PPW-Practical" id="PPW-Practical" class="formbold-form-input"
+                        [(ngModel)]="course_master_data.ppw_practical" required>
+                        <option value="" disabled selected hidden>Select PPW-Practical</option>
+                        <option [value]="0">0</option>
+                        <option [value]="1">1</option>
+                        <option [value]="2">2</option>
+                        <option [value]="3">3</option>
+                    </select>
+                </div>
+            </div>  -->
+
+            <button type="submit" [disabled]='!myForm.form.valid  && disable()'
+            [ngClass]="{'default-button':!myForm.form.valid,'blue-button':myForm.form.valid && disable()}">Add To DB
+        </button>
+
+        </form>
+    </div>
+</div>

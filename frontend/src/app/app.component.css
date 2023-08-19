@@ -29,7 +29,7 @@ app-sidebar{
 .display-area{
   padding: absolute;
   margin-left: 60px;
-  margin-top: 4rem;
+  margin-top: rem;
   width: calc(100% - 60px);
   transition: left 250ms ease-in, width 250ms ease-in;
 }

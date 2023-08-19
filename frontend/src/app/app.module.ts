@@ -24,6 +24,10 @@ import { FirstpageComponent } from './firstpage/firstpage.component';
 import { CourseMasterComponent } from './JA/course-master/course-master.component';
 import { UniversityMarksComponent } from './JA/university-marks/university-marks.component';
 import { HttpClientModule } from '@angular/common/http';
+import { Questionpattern1Component } from './JA/questionpattern1/questionpattern1.component';
+import { RolebasedComponent } from './rolebased/rolebased.component';
+import { RoleComponent } from './role/role.component';
+import { RoleguardComponent } from './roleguard/roleguard.component';
 
 
 
@@ -36,7 +40,7 @@ import { HttpClientModule } from '@angular/common/http';
     SidebarComponent,
     DashboardComponent,
     PagenotfoundComponent,
-   LoginComponent,RegisterComponent,FnavbarComponent, MainpageComponent, FirstpageComponent, CourseMasterComponent, UniversityMarksComponent
+   LoginComponent,RegisterComponent,FnavbarComponent, MainpageComponent, FirstpageComponent, CourseMasterComponent, UniversityMarksComponent, Questionpattern1Component, RolebasedComponent, RoleComponent, RoleguardComponent
   ],
   imports: [
     BrowserModule,

@@ -6,9 +6,12 @@ import { CourseMasterComponent } from './JA/course-master/course-master.componen
 import { UniversityMarksComponent } from './JA/university-marks/university-marks.component';
 import { LoginComponent } from './login/login.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
+// import { RoleGuard } from './role.guard';
 
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RegisterComponent } from './register/register.component';
+import { Questionpattern1Component } from './JA/questionpattern1/questionpattern1.component';
+import { RolebasedComponent } from './rolebased/rolebased.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -18,6 +21,8 @@ const routes: Routes = [
   {path:'mainpage',component:MainpageComponent},
   {path:'course_entry',component:CourseMasterComponent},
   {path:'university_entry',component:UniversityMarksComponent},
+  {path:'qp1',component:Questionpattern1Component},
+  // {path:'IAT',component:RolebasedComponent,canActivate:[RoleGuard],data:{allowedRules:['HOD','JA','Faculty']}}
   
 
 
